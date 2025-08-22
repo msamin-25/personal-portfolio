@@ -3,84 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio | CS Student</title>
+  <title>Portfolio - Your Name</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <h2 class="logo">MyPortfolio</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="resume.pdf" download class="btn">Download Resume</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Hi, I'm <span class="highlight">Mohammad Samin</span></h1>
-      <p>A Computer Science Student at University of Waterloo</p>
-      <a href="#projects" class="btn">View My Work</a>
+  
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Computer Science Student | University of Waterloo</p>
     </div>
-    <div class="hero-img">
-      <img src="profile.jpg" alt="Profile Picture">
-    </div>
-  </section>
+  </header>
 
   <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate Computer Science student with a strong interest in software development,
-      AI, and web technologies. I enjoy building projects that solve real-world problems and 
-      showcase creativity through code.
-    </p>
+  <section class="about container">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <div>
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student passionate about software development, 
+        problem-solving, and building impactful projects. I enjoy exploring 
+        new technologies and applying them to real-world challenges.
+      </p>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section class="projects container">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <h3>AI-Powered Study Planner</h3>
-        <p>Built a web app to help students manage study schedules using AI suggestions.</p>
+        <h3>AI Study Planner</h3>
+        <p>An AI-powered planner that helps students organize study sessions efficiently.</p>
       </div>
       <div class="project-card">
         <h3>Soccer Lineup App</h3>
-        <p>A drag-and-drop soccer lineup builder for my local youth club.</p>
+        <p>A drag-and-drop web app to create soccer team lineups with live sharing.</p>
       </div>
       <div class="project-card">
-        <h3>Personal Portfolio</h3>
-        <p>This portfolio itself, designed to showcase my skills and projects.</p>
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal website showcasing my skills, resume, and projects.</p>
       </div>
     </div>
   </section>
 
   <!-- Resume -->
-  <section id="resume">
+  <section class="resume container">
     <h2>Resume</h2>
-    <p>You can preview my resume below or download it using the button above.</p>
-    <div class="resume-container">
-      <iframe src="resume.pdf"></iframe>
-    </div>
+    <iframe src="resume.pdf" width="100%" height="500px" style="border:none;"></iframe>
+    <br>
+    <a href="resume.pdf" download class="btn">Download Resume</a>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:samin@example.com">samin@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
-    <p>GitHub: <a href="https://github.com/msamin-25" target="_blank">github.com/msamin-25</a></p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Mohammad Samin | All Rights Reserved</p>
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="mailto:your.email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/YOUR-GITHUB" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-note">© 2025 Your Name. All Rights Reserved.</p>
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
