@@ -8,6 +8,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Glow effect on scroll
+window.addEventListener("scroll", () => {
+  document.querySelectorAll(".project-card").forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      card.style.boxShadow = "0 0 20px rgba(36, 55, 51, 0.6)";
+    }
+  });
+});
+
+
 const roles = ["a Web Developer", "a Software Developer", "a Mathie"];
 let roleIndex = 0;
 let charIndex = 0;
@@ -44,14 +55,4 @@ function typeEffect() {
 
 document.addEventListener("DOMContentLoaded", typeEffect);
 
-
-// Glow effect on scroll
-window.addEventListener("scroll", () => {
-  document.querySelectorAll(".project-card").forEach(card => {
-    const rect = card.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      card.style.boxShadow = "0 0 20px rgba(36, 55, 51, 0.6)";
-    }
-  });
-});
 

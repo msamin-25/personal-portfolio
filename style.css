@@ -138,7 +138,7 @@ footer {
 }
 
 #typing-text {
-  border-right: 3px solid #fff;
+  border-right: 3px solid #568b35;
   padding-right: 5px;
   animation: blink 0.7s infinite;
   font-weight: 600;
