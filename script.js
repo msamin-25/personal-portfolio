@@ -8,6 +8,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Toggle mobile menu
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+});
+
+
 // Glow effect on scroll
 window.addEventListener("scroll", () => {
   document.querySelectorAll(".project-card").forEach(card => {
